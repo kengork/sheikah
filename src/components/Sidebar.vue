@@ -2,7 +2,7 @@
   <div>
     <div class="sidebar">
       <div class="brand">
-      <router-link class="logo" to="/">
+      <router-link class="logo" to="/wallet">
         <img class="sheikah-img" src='@/resources/svg/sheikah.svg' />
       </router-link>
       </div>

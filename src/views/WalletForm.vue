@@ -119,7 +119,7 @@
       <el-input placeholder="Repeat password"/>
 
       <el-button v-on:click="gotStep('seedValidation')">Back</el-button>
-      <router-link to="/main">Next</router-link>
+      <router-link to="/wallet">Next</router-link>
     </el-card>
   </div>
 </template>
