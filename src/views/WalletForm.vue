@@ -1,13 +1,12 @@
 <template>
   <div>
-    <!-- Welcome step -->
     <el-card v-if="step === 'welcome'" class="box-card">
       <div slot="header" class="clearfix">
         <span>Hey, listen!</span>
       </div>
-      <p
-        class="subtitle"
-      >This assistant will guide you through the process of creating your own Witnet wallet.</p>
+      <p class="subtitle" >
+        This assistant will guide you through the process of creating your own Witnet wallet.
+      </p>
       <p class="text">
         A wallet is an app that keeps your credentials safe and lets you interface with the
         Witnet blockchain in many ways: from transferring Wit to someone else to creating
@@ -119,8 +118,9 @@
       <el-input placeholder="Repeat password"/>
 
       <el-button v-on:click="gotStep('seedValidation')">Back</el-button>
-      <router-link to="/main">Next</router-link>
+      <router-link to="/wallet/transaction">Next</router-link>
     </el-card>
+    <button @click="run">TRY</button>
   </div>
 </template>
 
@@ -133,6 +133,9 @@ export default {
     }
   },
   methods: {
+    run () {
+      this.$store.dispatch('getWalletInfos')
+    },
     goStep (step) {
       this.step = step
     },
@@ -140,7 +143,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .seed {
   align-items: center;
   border: 2px dashed grey;

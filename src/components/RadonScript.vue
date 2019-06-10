@@ -34,7 +34,6 @@ export default {
     pushOperator: Function,
   },
   data () {
-    console.log(this.$props)
     return {}
   },
   methods: { },

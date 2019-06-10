@@ -1,13 +1,11 @@
 <template>
-  <div class="navigation">
-    <BaseCard :title="title" class="navigation shadow">
-      <p class="content">
+  <div class="navigation-card">
+    <BaseCard :title="title" class="shadow">
+      <div class="content">
         <slot></slot>
-      </p>
-      <div class="button-group">
-      <Button type="navigation-button" @click="previousStep">Previous Step</Button>
-      <Button type="navigation-button" @click="nextStep">Next Step</Button>
       </div>
+        <Button type="navigation" :onClick="previousStep">{{ previousText }}</Button>
+        <Button type="navigation" :onClick="nextStep">{{ nextText }}</Button>
     </BaseCard>
   </div>
 </template>
@@ -22,6 +20,8 @@ export default {
     title: String,
     previousStep: Function,
     nextStep: Function,
+    previousText: String,
+    nextText: String,
   },
   components: {
     Button,
@@ -41,15 +41,37 @@ export default {
 @import '@/styles/app.global.scss';
 @import '@/styles/_colors.scss';
 
-.navigation > .title {
+.navigation-card {
+  font-size: 16px;
+}
+
+.navigation-card .title {
+  align-items: center;
   background: $sheikah-gradient;
   color: $grey-2;
+  display: flex;
+  flex-flow: row nowrap;
   font-size: $loading-modal-title-font-size;
   font-weight: 100;
+  height: 100px;
 }
 
-.shadow {
-  box-shadow: $default-box-shadow;
+.navigation-card .title .card-title {
+  margin-left: 40px;
 }
 
+
+.content {
+  height: 389px;
+  font-size: 16px;
+}
+
+.button-group {
+  height: 10px;
+  width: 100%;
+}
+
+.button-nav-card {
+  align-self: flex-end;
+}
 </style>
