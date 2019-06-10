@@ -21,7 +21,7 @@ export default {
   @import '@/styles/theme.scss';
 
   .card {
-    max-width: 600px;
+    max-width: 500px;
     border: 1px solid #EEE;
     border-radius: 2px;
   }

@@ -5,8 +5,8 @@
         <slot></slot>
       </p>
       <div class="button-group">
-      <Button type="navigation-button" @click="previousStep">Previous Step</Button>
-      <Button type="navigation-button" @click="nextStep">Next Step</Button>
+      <Button class="navigation" @click="previousStep">Previous Step</Button>
+      <Button class="navigation" @click="nextStep">Next Step</Button>
       </div>
     </BaseCard>
   </div>
@@ -22,6 +22,7 @@ export default {
     title: String,
     previousStep: Function,
     nextStep: Function,
+    buttonNav: Boolean
   },
   components: {
     Button,
