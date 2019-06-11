@@ -1,5 +1,5 @@
 <template>
-  <NavigationCard 
+  <NavigationCard
     class="wallet-encryption"
     title="Encrypt your wallet with a password"
     previousText="Back"
@@ -28,16 +28,16 @@
 </template>
 
 <script>
-  import NavigationCard from '@/components/NavigationCard'
-  export default {
-    name: 'WalletEncryptionPassword',
-    props: {
+import NavigationCard from '@/components/NavigationCard'
+export default {
+  name: 'WalletEncryptionPassword',
+  props: {
 
-    },
-    components: {
-      NavigationCard
-    }
-  }
+  },
+  components: {
+    NavigationCard,
+  },
+}
 </script>
 <style lang="scss" >
 @import '@/styles/theme.scss';

@@ -21,15 +21,15 @@ import NavigationCard from '@/components/NavigationCard'
 export default {
   name: 'WalletSeedBackup',
   props: {
-    mnemonics: Array
+    mnemonics: Array,
   },
   components: {
-    NavigationCard
+    NavigationCard,
   },
   methods: {
-    calculateFirstSentence: () => mnemonics.split(" ").slice(0, 6).join(" "),
-    calculateSecondSentence: () => mnemonics.split(" ").slice(6).join(" ")
-  }
+    calculateFirstSentence: () => mnemonics.split(' ').slice(0, 6).join(' '),
+    calculateSecondSentence: () => mnemonics.split(' ').slice(6).join(' '),
+  },
 }
 </script>
 <style lang="scss">

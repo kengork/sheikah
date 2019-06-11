@@ -39,7 +39,7 @@ export default {
 }
 </script>
 
-<style lang='scss'>
+<style lang='scss'         >
 @import '@/styles/app.global.scss';
 @import '@/styles/_colors.scss';
 
@@ -55,5 +55,6 @@ export default {
   display: flex;
   flex-flow: row nowrap;
   height: auto;
+  margin-top:  300px;
 }
 </style>

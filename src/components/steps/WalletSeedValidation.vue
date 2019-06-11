@@ -4,10 +4,10 @@
     <p>"Please type your 12 word seed phrase exactly as it was shown to you on the previous " +
       "screen.",
       "This step is to confirm that you have copied your seed phrase correctly.",</p>
-    <InputBig 
+    <InputBig
       class="seed"
       :value="inputValue"
-      :onChange="onChangeInput" 
+      :onChange="onChangeInput"
     />
     <p>
       Please ensure you do not add any extra spaces between words or at the beginning or end
@@ -21,13 +21,13 @@ import NavigationCard from '@/components/NavigationCard'
 export default {
   name: 'WalletSeedValidation',
   components: {
-    NavigationCard
+    NavigationCard,
   },
   props: {
     value: String,
     onChangeInput: String,
     inputValue: String,
-  }
+  },
 }
 </script>
 <style lang="scss">
@@ -57,5 +57,3 @@ export default {
   width: 100%;
 }
 </style>
-
-

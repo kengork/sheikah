@@ -10,8 +10,8 @@ export default {
   name: 'InputBig',
   props: {
     value: String,
-    onChange: Function
-  }
+    onChange: Function,
+  },
 }
 </script>
 <style lang="scss">
@@ -34,5 +34,3 @@ export default {
   }
 }
 </style>
-
-

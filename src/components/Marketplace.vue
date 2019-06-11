@@ -1,6 +1,7 @@
-
 <template>
-  <div>Marketplace</div>
+  <div>
+    Marketplace
+  </div>
 </template>
 
 <script>

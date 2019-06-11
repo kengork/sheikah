@@ -1,6 +1,5 @@
 <template>
   <div>
-    <!-- Welcome step -->
     <el-card v-if="step === 'welcome'" class="box-card">
       <div slot="header" class="clearfix">
         <span>Hey, listen!</span>
@@ -140,7 +139,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .seed {
   align-items: center;
   border: 2px dashed grey;

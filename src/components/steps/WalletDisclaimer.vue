@@ -1,7 +1,7 @@
 <template>
-  <NavigationCard 
-    class="wallet-disclaimer" 
-    title="IMPORTANT" previousText="Back" 
+  <NavigationCard
+    class="wallet-disclaimer"
+    title="IMPORTANT" previousText="Back"
     nextText="I will be careful, I promise!"
   >
     <p class="paragraph">
@@ -26,13 +26,13 @@
 </template>
 
 <script>
-  import NavigationCard from '@/components/NavigationCard'
-  export default {
-    name: 'WalletDisclaimer',
-    components: {
-      NavigationCard,
-    },
-  }
+import NavigationCard from '@/components/NavigationCard'
+export default {
+  name: 'WalletDisclaimer',
+  components: {
+    NavigationCard,
+  },
+}
 </script>
 <style lang="scss">
 
