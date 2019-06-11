@@ -42,20 +42,12 @@ export default {
 <style lang='scss'>
 @import '@/styles/app.global.scss';
 @import '@/styles/_colors.scss';
+
 .navigation-card>.title {
   background: $sheikah-gradient;
   color: $grey-2;
   font-size: $loading-modal-title-font-size;
   font-weight: 100;
-}
-
-.shadow {
-  box-shadow: $default-box-shadow;
-  height: 550px;
-}
-
-.shadow .content {
-  height: 390px;
 }
 
 .button-group {
@@ -64,5 +56,4 @@ export default {
   flex-flow: row nowrap;
   height: auto;
 }
-
 </style>

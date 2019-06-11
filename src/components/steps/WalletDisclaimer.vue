@@ -36,6 +36,14 @@
 </script>
 <style lang="scss">
 
+.wallet-disclaimer .shadow {
+  height: 550px;
+}
+
+.wallet-disclaimer .shadow .content {
+  height: 390px;
+}
+
 .wallet-disclaimer>.card>.content {
   padding: 25px;
 }
