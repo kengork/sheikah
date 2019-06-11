@@ -1,12 +1,12 @@
 <template>
-  <div class="navigation">
-    <BaseCard :title="title" class="navigation shadow">
-      <p class="content">
+  <div class="navigation-card">
+    <BaseCard :title="title" class="shadow">
+      <div class="content">
         <slot></slot>
-      </p>
+      </div>
       <div class="button-group">
-      <Button class="navigation" @click="previousStep">Previous Step</Button>
-      <Button class="navigation" @click="nextStep">Next Step</Button>
+        <Button class="navigation" @click="previousStep">{{ previousText }}</Button>
+        <Button class="navigation" @click="nextStep">{{ nextText }}</Button>
       </div>
     </BaseCard>
   </div>
@@ -22,7 +22,8 @@ export default {
     title: String,
     previousStep: Function,
     nextStep: Function,
-    buttonNav: Boolean
+    nextText: String,
+    previousText: String,
   },
   components: {
     Button,
@@ -41,8 +42,7 @@ export default {
 <style lang='scss'>
 @import '@/styles/app.global.scss';
 @import '@/styles/_colors.scss';
-
-.navigation > .title {
+.navigation-card>.title {
   background: $sheikah-gradient;
   color: $grey-2;
   font-size: $loading-modal-title-font-size;
@@ -51,6 +51,18 @@ export default {
 
 .shadow {
   box-shadow: $default-box-shadow;
+  height: 550px;
+}
+
+.shadow .content {
+  height: 390px;
+}
+
+.button-group {
+  align-items: flex-end;
+  display: flex;
+  flex-flow: row nowrap;
+  height: auto;
 }
 
 </style>

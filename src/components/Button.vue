@@ -115,6 +115,9 @@ export default {
   outline: inherit;
   padding: 0 20px;
   width: 450px;
+  &:hover {
+    border-color: #9999;
+  }
 
   &:active {
     background: $button_option-active-background;
@@ -133,15 +136,14 @@ export default {
   color: $button_navigation-color;
   cursor: pointer;
   font: inherit;
-  height: 50px;
+  height: 60px;
   padding: 0;
   width: 50%;
 
   &:last-of-type {
-    border-right: 0;
+    border-left:0;
   }
 
-  &:hover,
   &:focus {
     border-color: $button_navigation-border-color;
   }
