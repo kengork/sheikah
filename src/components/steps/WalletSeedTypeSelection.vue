@@ -60,19 +60,19 @@ export default {
 @import '@/styles/_colors.scss';
 
 .selection-container {
-    align-items: center;
-    background: $sheikah-gradient;
-    border-bottom: solid 1px $grey-4;
-    color: $grey-2;
-    display: flex;
-    flex-flow: row nowrap;
-    font-size: $loading-modal-title-font-size;
-    font-size: 19px;
-    font-weight: 100;
-    height: 100px;
+  align-items: center;
+  background: $sheikah-gradient;
+  border-bottom: solid 1px $grey-4;
+  color: $grey-2;
+  display: flex;
+  flex-flow: row nowrap;
+  font-size: $loading-modal-title-font-size;
+  font-size: 19px;
+  font-weight: 100;
+  height: 100px;
 }
 
-.wallet-seed-type-selection .selection-container .selection-title{
+.wallet-seed-type-selection .selection-container .selection-title {
   margin-left: 38px;
 }
 
@@ -86,13 +86,15 @@ export default {
 
 .options {
   margin-top: 30px;
+
   li {
     margin-bottom: 10px;
   }
 }
 
 .create-wallet-option {
-  margin: 12px 2px;
+  margin: 10px;
+  margin-left: 0;
   width: 500px;
 }
 
