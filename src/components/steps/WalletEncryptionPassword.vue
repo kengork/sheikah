@@ -11,7 +11,7 @@
         <label class="label">Password</label>
         <!-- <InputUnderlined className={`${stepStyles.input} ${stepStyles["password-input"]}`} type="password"
           onChange={this.props.onChangePassword} value={this.props.password} /> -->
-        <input type="text">
+        <!-- <input type="text"> -->
       </div>
       <div class="form-row">
         <label class="label">
@@ -19,7 +19,8 @@
         </label>
         <!-- <InputUnderlined className={`${stepStyles.input} stepStyles["confirm-password-input"]`} type="password"
             onChange={this.props.onChangeRepeatPassword} value={this.props.repeatPassword} /> -->
-        <input type="text">
+        <!-- <input type="text"> -->
+        
       </div>
     </div>
   </NavigationCard>
@@ -38,7 +39,7 @@ export default {
 @import '@/styles/theme.scss';
 
 .content {
-  padding: 30px 40px;
+  padding: 30px;
 }
 
 .paragraph {

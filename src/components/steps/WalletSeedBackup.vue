@@ -38,7 +38,7 @@ export default {
 @import '@/styles/theme.scss';
 
 .content {
-  padding: 30px 40px;
+  padding: 30px;
 }
 
 .seed {

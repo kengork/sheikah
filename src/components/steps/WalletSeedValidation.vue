@@ -32,7 +32,7 @@ export default {
 @import '@/styles/theme.scss';
 
 .content {
-  padding: 30px 40px;
+  padding: 30px;
 }
 
 .seed {
@@ -46,8 +46,10 @@ export default {
   line-break: auto;
   line-height: 1.5em;
   margin: 30px 0;
-  height: 125px;
-  padding: 20px 25px;
+  padding: 40px;
   width: 100%;
+  margin-top: 40px;
 }
+
+
 </style>

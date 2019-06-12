@@ -77,7 +77,7 @@ export default {
 }
 
 .content-wallet {
-  padding: 30px 40px;
+  padding: 30px;
 }
 
 .create-wallet-text {

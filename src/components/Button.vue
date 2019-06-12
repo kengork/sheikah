@@ -14,7 +14,7 @@ export default {
   },
   methods: {
     normalizeType (propType) {
-      const buttonTypes = ['danger', 'dashed', 'default', 'option', 'positive', 'primary', 'navigation']
+      const buttonTypes = ['navigation', 'danger', 'dashed', 'default', 'option', 'positive', 'primary']
       return buttonTypes.includes(propType) ? propType : 'default'
     },
   },

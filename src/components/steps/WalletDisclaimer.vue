@@ -5,7 +5,7 @@
     nextText="I will be careful, I promise!"
   >
   <div class="content">
-    <p class="paragraph">
+    <p>
       You will be shown a 12 word seed phrase. This seed phrase is very important. If you are
       ever locked out of your wallet or lose access for any reason, you can regain access to
       your wallet again from any computer using your seed phrase.
@@ -39,7 +39,7 @@ export default {
 </script>
 <style lang="scss" scoped>
   .content {
-    padding: 30px 40px;
+    padding: 30px;
   }
   .paragraph {
     margin-top: 10px;

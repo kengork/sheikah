@@ -56,7 +56,7 @@ export default {
 }
 
 .navigation-card  .title .card-title{
-  margin-left: 38px;
+  margin-left: 40px;
 }
 
 .content {
