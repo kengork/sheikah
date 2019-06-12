@@ -30,17 +30,8 @@ export default {
   },
 }
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
 @import '@/styles/theme.scss';
-
-.wallet-seed-validation .shadow {
-  height: 450px;
-}
-
-.wallet-seed-validation .shadow .content {
-  height: 290px;
-  padding: 30px;
-}
 
 .seed {
   align-items: center;
