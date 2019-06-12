@@ -1,6 +1,10 @@
 <template>
-  <BaseCard class="card" title="Create your wallet">
-    <p class="text">
+  <BaseCard class="wallet-seed-type-selection">
+    <div class='selection-container'>
+        <h5 class='selection-title'>Create your Wallet</h5>
+    </div>
+    <div class="content-wallet">
+    <p class="create-wallet-text">
       We will now help you create a new local wallet.
     </p>
     <ul class="options">
@@ -21,7 +25,6 @@
             RECOMMENDED
           </p>
         </Button>
-
       </li>
       <li>
         <!-- TODO: Onclick -->
@@ -35,6 +38,8 @@
         </Button>
       </li>
     </ul>
+      
+    </div>
   </BaseCard>
 </template>
 
@@ -50,50 +55,45 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import '@/styles/theme.scss';
 @import '@/styles/_colors.scss';
 
-.card {
-  border-radius: 2px;
-  border: 1px solid #EEE;
-  height: 520px;
-  max-width: 530px;
+.selection-container {
+    align-items: center;
+    background: $sheikah-gradient;
+    border-bottom: solid 1px $grey-4;
+    color: $grey-2;
+    display: flex;
+    flex-flow: row nowrap;
+    font-size: $loading-modal-title-font-size;
+    font-size: 19px;
+    font-weight: 100;
+    height: 100px;
 }
 
-.card>.title {
-  align-items: center;
-  background: $sheikah-gradient;
-  border-bottom: solid 1px $grey-4;
-  color: white;
-  display: flex;
-  flex-flow: row nowrap;
-  font-size: 19px;
-  height: 100px;
-  padding: 30px;
+.wallet-seed-type-selection .selection-container .selection-title{
+  margin-left: 38px;
 }
 
-.card>.title>h5 {
-  margin-left: 8px;
+.content-wallet {
+  padding: 30px 40px;
 }
 
-.text {
-  align-items: center;
+.create-wallet-text {
   color: $font-color-dark;
-  display: flex;
-  flex-flow: row nowrap;
-  height: 80px;
-  padding: 40px;
 }
 
 .options {
+  margin-top: 30px;
   li {
     margin-bottom: 10px;
   }
 }
 
 .create-wallet-option {
-  margin: 0 auto;
+  margin: 12px 2px;
+  width: 500px;
 }
 
 .recommended-text {
