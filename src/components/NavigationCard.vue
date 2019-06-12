@@ -4,9 +4,9 @@
       <div class="content">
         <slot></slot>
       </div>
-      <div class="button-group">
-        <Button class="navigation" @click="previousStep">{{ previousText }}</Button>
-        <Button class="navigation" @click="nextStep">{{ nextText }}</Button>
+        <div class="button-group">
+          <Button class="navigation button-nav-card" @click="previousStep">{{ previousText }}</Button>
+          <Button class="navigation button-nav-card" @click="nextStep">{{ nextText }}</Button>
       </div>
     </BaseCard>
   </div>
@@ -39,22 +39,37 @@ export default {
 }
 </script>
 
-<style lang='scss'         >
+<style lang='scss'>
 @import '@/styles/app.global.scss';
 @import '@/styles/_colors.scss';
 
-.navigation-card>.title {
+.navigation-card .title {
+  font-size: 19px;
+  flex-flow: row nowrap;
+  display: flex;
+  align-items: center;
+  height: 100px;
   background: $sheikah-gradient;
   color: $grey-2;
   font-size: $loading-modal-title-font-size;
   font-weight: 100;
 }
 
+.navigation-card  .title .card-title{
+  margin-left: 38px;
+}
+
+.content {
+  height: 375px;
+}
+
 .button-group {
-  align-items: flex-end;
+  width: 100%;
   display: flex;
-  flex-flow: row nowrap;
-  height: auto;
-  margin-top:  300px;
+  height: 75px;
+}
+
+.button-nav-card {
+  align-self: flex-end;
 }
 </style>
