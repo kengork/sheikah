@@ -4,6 +4,7 @@
     title="IMPORTANT" previousText="Back"
     nextText="I will be careful, I promise!"
   >
+  <div class="content">
     <p class="paragraph">
       You will be shown a 12 word seed phrase. This seed phrase is very important. If you are
       ever locked out of your wallet or lose access for any reason, you can regain access to
@@ -22,6 +23,8 @@
       We recommend storing your seed phrase on paper somewhere safe. Do not store it in a file
       on your computer or anywhere electronically.
     </p>
+
+  </div>
   </NavigationCard>
 </template>
 
@@ -34,21 +37,13 @@ export default {
   },
 }
 </script>
-<style lang="scss">
-
-.wallet-disclaimer .shadow {
-  height: 550px;
-}
-
-.wallet-disclaimer .shadow .content {
-  height: 390px;
-}
-
-.wallet-disclaimer>.card>.content {
-  padding: 25px;
-}
-
-.paragraph {
-  margin-bottom: 12px;
-}
+<style lang="scss" scoped>
+  .content {
+    padding: 30px 40px;
+  }
+  .paragraph {
+    margin-top: 10px;
+    font-size: 16px;
+  }
 </style>
+
